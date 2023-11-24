@@ -269,8 +269,8 @@ export function decorateLinks(block) {
       }
 
       const url = new URL(link.href);
-      const external = !url.host.match('macktrucks.com.emea') && !url.host.match('.hlx.(page|live)') && !url.host.match('localhost');
-      if (url.host.match('build.macktrucks.com.emea') || url.pathname.endsWith('.pdf') || external) {
+      const external = !url.host.match('macktrucksemea.com') && !url.host.match('.hlx.(page|live)') && !url.host.match('localhost');
+      if (url.host.match('build.macktrucksemea.com') || url.pathname.endsWith('.pdf') || external) {
         link.target = '_blank';
       }
     });
